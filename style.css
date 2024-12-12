@@ -4,94 +4,105 @@
     padding: 0;
     box-sizing: border-box;
     font-family: inherit;
-}
-
-/* Definindo variáveis no root */
-:root {
+  }
+  
+  /* Definindo variáveis no root */
+  :root {
     /* Cores principais */
-    --cor-primaria: #4CAF50;
+    --cor-primaria: #4caf50;
     --cor-secundaria: #333;
     --cor-fundo: #f4f4f4;
     --cor-texto: #000000;
     --cor-destaque: #45a049;
     --cor-secundaria-clara: #666;
     --cor-text-hero: #ffffff;
-
+  
     /* Tipografia */
-    --font-principal: 'Arial', sans-serif;
-    --font-secundaria: 'Roboto', sans-serif;
-
+    --font-principal: "Arial", sans-serif;
+    --font-secundaria: "Roboto", sans-serif;
+  
     /* Tamanhos de fontes */
     --font-titulo: 3em;
     --font-subtitulo: 2.5em;
     --font-texto: 1.5em;
     --font-body: 1em;
-
+  
     /* Espaçamentos */
     --padding-section: 60px;
     --margin-section: 30px;
     --padding-sm: 10px;
     --margin-sm: 15px;
-}
-
-/* Estilos do Corpo */
-body {
+  }
+  
+  /* Estilos do Corpo */
+  body {
     font-family: var(--font-principal);
     line-height: 1.6;
-    background-image: url('assets/images/bgCodeOpen.png');
+    background-image: url("assets/images/bgCodeOpen.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: var(--cor-texto);
     font-size: var(--font-body);
-}
-
-/* Container comum */
-.container {
+  }
+  
+  /* Container comum */
+  .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-/* Estilos do Cabeçalho */
-header {
-    background-color: var(--cor-secundaria);
+  }
+  
+  /* Estilos do Cabeçalho */
+  header {
+    background-color: transparent;
     color: var(--cor-text-hero);
     padding: var(--padding-sm) 0;
-}
-
-header nav ul {
+    position: relative;
+  }
+  
+  header nav ul {
     list-style-type: none;
     text-align: center;
     margin-top: 10px;
-}
-
-header nav ul li {
+  }
+  
+  header nav ul li {
     display: inline-block;
     margin: 0 var(--margin-sm);
-}
-
-header nav ul li a {
+  }
+  
+  header nav ul li a {
     color: var(--cor-text-hero);
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-header nav ul li a:hover {
+  }
+  
+  header nav ul li a:hover {
     text-decoration: underline;
     color: var(--cor-destaque);
-}
-
-/* Seção Hero */
-#hero {
+  }
+  
+  /* Menu hamburguer */
+  .menu-toggle {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Seção Hero */
+  #hero {
     position: relative;
     text-align: center;
     padding: 100px 0;
     background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura para destacar o texto */
-}
-
-#hero .logo {
+  }
+  
+  #hero .logo {
     position: absolute;
     top: 10px;
     left: 20px;
@@ -99,23 +110,23 @@ header nav ul li a:hover {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-#hero h1 {
+  }
+  
+  #hero h1 {
     font-size: var(--font-titulo);
     margin: 20px 0;
     font-weight: bold;
     color: var(--cor-text-hero);
-}
-
-#hero p {
+  }
+  
+  #hero p {
     font-size: var(--font-texto);
     color: var(--cor-text-hero);
     margin: 10px 0;
-}
-
-/* Botão Call to Action */
-.cta-button {
+  }
+  
+  /* Botão Call to Action */
+  .cta-button {
     background-color: var(--cor-fundo);
     color: var(--cor-primaria);
     padding: 15px 30px;
@@ -124,90 +135,143 @@ header nav ul li a:hover {
     border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta-button:hover {
+  }
+  
+  .cta-button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-text-hero);
-}
-
-/* Seção de Serviços */
-#servicos {
+  }
+  
+  /* Seção de Serviços */
+  #servicos {
     padding: var(--padding-section) 0;
     background: var(--cor-fundo);
     text-align: center;
-}
-
-#servicos h2 {
+  }
+  
+  #servicos h2 {
     margin-bottom: var(--margin-section);
     font-size: var(--font-subtitulo);
-}
-
-.servico {
+  }
+  
+  .servico {
     margin-bottom: 40px;
-}
-
-.servico h3 {
+  }
+  
+  .servico h3 {
     font-size: 2em;
     color: var(--cor-secundaria);
     margin-bottom: 10px;
-}
-
-.servico p {
+  }
+  
+  .servico p {
     font-size: 1.2em;
-}
-
-/* Seção de Contato */
-#contato {
+  }
+  
+  /* Seção de Contato */
+  #contato {
     padding: var(--padding-section) 0;
     background: var(--cor-fundo);
     text-align: center;
-}
-
-#contato h2 {
+  }
+  
+  #contato h2 {
     margin-bottom: var(--margin-section);
     font-size: var(--font-subtitulo);
-}
-
-#contato p {
+  }
+  
+  #contato p {
     font-size: 1.2em;
     margin-bottom: 20px;
-}
-
-/* Rodapé */
-footer {
-    background-color: var(--cor-secundaria);
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: transparent;
     color: var(--cor-text-hero);
     padding: 20px 0;
     text-align: center;
-}
-
-footer p {
+  }
+  
+  footer p {
     font-size: 1em;
     margin-top: 10px;
-}
+  }
+  
+  /* Estilos para os ícones de redes sociais */
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: var(--cor-text-hero); /* Cor do ícone */
+    margin: 0 10px;
+    font-size: 24px; /* Tamanho dos ícones */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: var(--cor-destaque); /* Cor ao passar o mouse */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    /*header {
+        background-color: var(--cor-destaque);
+    }*/
 
-/* Responsividade */
-@media (max-width: 768px) {
+    /* Exibe o botão de menu hamburguer */
+    .menu-toggle {
+      display: block;
+    }
+  
+    /* Esconde o menu por padrão em telas pequenas */
+    header nav ul {
+      display: none;
+      width: 100%;
+      text-align: left;
+      background-color: var(--cor-secundaria);
+      padding: 20px;
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  
+    /* Quando o menu estiver aberto, mostra os links */
+    header nav ul.show {
+      display: block;
+    }
+  
     header nav ul li {
-        display: block;
-        margin: var(--margin-sm) 0;
+      display: block;
+      margin: var(--margin-sm) 0;
     }
-
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    /* Responsividade da seção Hero */
     #hero h1 {
-        font-size: 2.5em;
+      font-size: 2.5em;
     }
-
+  
     #hero p {
-        font-size: 1.2em;
+      font-size: 1.2em;
     }
-
+  
     .cta-button {
-        padding: 10px 20px;
+      padding: 10px 20px;
     }
-
+  
     #servicos h2,
     #contato h2 {
-        font-size: 2em;
+      font-size: 2em;
     }
-}
+  
+    .social-icons a {
+      font-size: 30px;
+    }
+  }
+  
