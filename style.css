@@ -1,0 +1,148 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('assets/images/bgCodeOpen.png'); /* Caminho para sua imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz com que o fundo não se mova com o scroll */
+}
+
+/* Container comum */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Hero */
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+/* Logo no canto superior esquerdo */
+#hero .logo {
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    /*left: 20px; /* Distância da esquerda */
+    width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    translate: (-50%, 50%);
+    height: 100px; /* Mantém o formato quadrado */
+    border-radius: 50%; /* Torna a logo redonda */
+    object-fit: cover; /* Faz a imagem preencher o círculo sem distorção */
+}
+
+
+/* Títulos e parágrafos da seção Hero */
+#hero h1 {
+    font-size: 3em;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+/* Botão Call to Action */
+.cta-button {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+    color: #ffffff;
+}
+
+/* Seção de Serviços */
+#servicos {
+    padding: 60px 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#servicos h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.servico {
+    margin-bottom: 40px;
+}
+
+.servico h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+.servico p {
+    font-size: 1.2em;
+}
+
+/* Seção de Contato */
+#contato {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+#contato h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+#contato p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
