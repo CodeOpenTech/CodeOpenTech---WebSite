@@ -3,106 +3,144 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: inherit;
 }
 
+/* Definindo variáveis no root */
+:root {
+    /* Cores principais */
+    --cor-primaria: #4CAF50;
+    --cor-secundaria: #333;
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #000000;
+    --cor-destaque: #45a049;
+    --cor-secundaria-clara: #666;
+    --cor-text-hero: #ffffff;
+
+    /* Tipografia */
+    --font-principal: 'Arial', sans-serif;
+    --font-secundaria: 'Roboto', sans-serif;
+
+    /* Tamanhos de fontes */
+    --font-titulo: 3em;
+    --font-subtitulo: 2.5em;
+    --font-texto: 1.5em;
+    --font-body: 1em;
+
+    /* Espaçamentos */
+    --padding-section: 60px;
+    --margin-section: 30px;
+    --padding-sm: 10px;
+    --margin-sm: 15px;
+}
+
+/* Estilos do Corpo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-principal);
     line-height: 1.6;
-    background-image: url('assets/images/bgCodeOpen.png'); /* Caminho para sua imagem de fundo */
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    background-position: center center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Faz com que o fundo não se mova com o scroll */
+    background-image: url('assets/images/bgCodeOpen.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--cor-texto);
+    font-size: var(--font-body);
 }
 
 /* Container comum */
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Estilos do Cabeçalho */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-text-hero);
+    padding: var(--padding-sm) 0;
 }
 
 header nav ul {
     list-style-type: none;
     text-align: center;
+    margin-top: 10px;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    margin: 0 var(--margin-sm);
 }
 
 header nav ul li a {
-    color: #fff;
+    color: var(--cor-text-hero);
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 header nav ul li a:hover {
     text-decoration: underline;
+    color: var(--cor-destaque);
 }
 
 /* Seção Hero */
 #hero {
     position: relative;
     text-align: center;
-    color: white;
     padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura para destacar o texto */
 }
 
-/* Logo no canto superior esquerdo */
 #hero .logo {
     position: absolute;
-    top: 10px; /* Distância do topo */
-    /*left: 20px; /* Distância da esquerda */
-    width: 100px; /* Ajuste o tamanho da logo conforme necessário */
-    translate: (-50%, 50%);
-    height: 100px; /* Mantém o formato quadrado */
-    border-radius: 50%; /* Torna a logo redonda */
-    object-fit: cover; /* Faz a imagem preencher o círculo sem distorção */
+    top: 10px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-
-/* Títulos e parágrafos da seção Hero */
 #hero h1 {
-    font-size: 3em;
+    font-size: var(--font-titulo);
+    margin: 20px 0;
+    font-weight: bold;
+    color: var(--cor-text-hero);
 }
 
 #hero p {
-    font-size: 1.5em;
-    margin: 20px 0;
+    font-size: var(--font-texto);
+    color: var(--cor-text-hero);
+    margin: 10px 0;
 }
 
 /* Botão Call to Action */
 .cta-button {
-    background-color: #fff;
-    color: #4CAF50;
-    padding: 10px 20px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #45a049;
-    color: #ffffff;
+    background-color: var(--cor-destaque);
+    color: var(--cor-text-hero);
 }
 
 /* Seção de Serviços */
 #servicos {
-    padding: 60px 0;
-    background: #f4f4f4;
+    padding: var(--padding-section) 0;
+    background: var(--cor-fundo);
     text-align: center;
 }
 
 #servicos h2 {
-    margin-bottom: 30px;
-    font-size: 2.5em;
+    margin-bottom: var(--margin-section);
+    font-size: var(--font-subtitulo);
 }
 
 .servico {
@@ -111,7 +149,8 @@ header nav ul li a:hover {
 
 .servico h3 {
     font-size: 2em;
-    color: #333;
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
 }
 
 .servico p {
@@ -120,14 +159,14 @@ header nav ul li a:hover {
 
 /* Seção de Contato */
 #contato {
-    padding: 60px 0;
-    background: #fff;
+    padding: var(--padding-section) 0;
+    background: var(--cor-fundo);
     text-align: center;
 }
 
 #contato h2 {
-    margin-bottom: 30px;
-    font-size: 2.5em;
+    margin-bottom: var(--margin-section);
+    font-size: var(--font-subtitulo);
 }
 
 #contato p {
@@ -137,12 +176,38 @@ header nav ul li a:hover {
 
 /* Rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-text-hero);
     padding: 20px 0;
     text-align: center;
 }
 
 footer p {
     font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: var(--margin-sm) 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    #servicos h2,
+    #contato h2 {
+        font-size: 2em;
+    }
 }
