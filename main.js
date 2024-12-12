@@ -79,6 +79,6 @@ function validateForm(e) {
   // Se tudo estiver correto, pode enviar o formulário
   if (valid) {
     alert("Formulário enviado com sucesso!");
-    // enviar o formulário ou fazer outras ações
+    // Aqui você pode enviar o formulário ou fazer outras ações
   }
 }
