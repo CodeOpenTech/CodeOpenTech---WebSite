@@ -31,7 +31,7 @@ Basta abrir o arquivo `index.html` no navegador web.
 1. Envie o repositório para sua conta no GitHub.
 2. Acesse as configurações do repositório.
 3. Habilite o GitHub Pages e selecione o branch (ex.: `main`) onde os arquivos estão localizados.
-4. Seu site estará disponível em `https://CodeOpenTech.github.io/CodeOpenTech---WebSite/`.
+4. Seu site estará disponível em `https://CodeOpenTech.github.io/CodeOpenTech-WebSite/`.
 
 ## Contribuição
 Contribuições para melhorar o site são bem-vindas! Veja como contribuir:
@@ -44,7 +44,7 @@ Contribuições para melhorar o site são bem-vindas! Veja como contribuir:
 Para dúvidas ou sugestões, entre em contato:
 - Email: contact@codeopen.com
 - WhatsApp: [Mande uma menssagem](https://wa.me/5521966311677?text=Olá,%20estou%20interessado%20nos%20seus%20serviços.)
-- [Acesse o Site](https://CodeOpenTech.github.io/CodeOpenTech---WebSite/)
+- [Acesse o Site](https://CodeOpenTech.github.io/CodeOpenTech-WebSite/)
 
 ## Licença
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
